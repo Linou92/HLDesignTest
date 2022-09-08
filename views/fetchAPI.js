@@ -57,7 +57,6 @@ function displaySearchProducts (data){
         const name = document.createElement("h6")
         name.innerHTML = shoeName
 
-        name.innerHTML = shoeName
         productsList.appendChild(product)
         product.appendChild(shoeImg)
         product.appendChild(name)
@@ -65,7 +64,7 @@ function displaySearchProducts (data){
     }
 }
 
-/* Function that only displays the first 6 products of the API call */
+/* Function that only displays the first 6 products of the API call (landing page)*/
 function displayFirstSixProducts(data) {
     console.log("D = ", data)
     // get the first 6 products
@@ -84,8 +83,8 @@ function displayFirstSixProducts(data) {
 
         const name = document.createElement("h6")
         name.innerHTML = shoeName
-
-        name.innerHTML = shoeName
+        //name.style = "height: 100%; width: 100%; object-fit: contain;"
+        
         productsList.appendChild(product)
         product.appendChild(shoeImg)
         product.appendChild(name)

@@ -21,34 +21,31 @@
 
   <body>
     
-    <div id="main" style="width: auto;">
-
-        <!-- HEADER -->
-        <header>
-            <!-- Navbar -->
-            <nav class="my-nav navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                <!-- logo -->
-                <a class="navbar-brand" href="#">SPORTSHOES.COM</a>
-                <div id="navbarNav">
-                <ul class="navbar-nav ms-auto"></ul>
-                <!-- entries -->    
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="men">MEN</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="women">WOMEN</a>
-                    </li>
-                </ul>
-                </div>
+    <!-- HEADER -->
+    <header>
+        <!-- Navbar -->
+        <nav class="my-nav navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <!-- logo -->
+              <a class="navbar-brand" href="#">SPORTSHOES.COM</a>
+              <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto"></ul>
+              <!-- entries -->    
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="men">MEN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="women">WOMEN</a>
+                </li>
+              </ul>
             </div>
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!-- END HEADER -->
+          </div>
+        </nav>
+        <!-- Navbar -->
 
         <!-- SLIDESHOW -->
+
         <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators -->
             <div class="carousel-indicators">
@@ -75,52 +72,54 @@
         </div>
         <!-- END SLIDESHOW -->
 
-        <div class="container">
-            <!-- SEARCH BAR -->
-            <div id="searchWrapper">
-                <input type="text" name="searchBar" id="searchBar" placeholder="Search product...">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </div>
-            <!-- END SEARCH BAR -->
-    
-            <!-- SHOW PRODUCTS -->
-            <ul id="productsList">
-                <!-- Dynamically with fetchAPI.js -->
-            </ul>
-            <!-- END SHOW PRODUCTS -->
-        </div>
-            
-    
-        <!-- BANNERS -->
-        <div class="container">
-            <div class="row row-cols-2">
-                <div class="col" id="banner1">
-                    <!--<img src="img/banner2.jpg" style="height: 100%; width: 100%; object-fit: contain;">-->
-                    <div class="title">
-                        <h4> FIGHT LIKE A SPIDER </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor feugiat ipsum quis ullamcorper.</p>
-                        <div id="collapse" style="display:none">
-                            <p>Sed eleifend lectus id semper accumsan.</p>
-                        </div>
-                        <a href="#collapse" class="nav-toggle">READ MORE</a>
-                    </div>
-                </div>
-                <div class="col" id="banner2">
-                    <!--<img src="img/banner2.jpg" style="height: 100%; width: 100%; object-fit: contain;">-->
-                    <div class="title">
-                        <h4> RUN LIKE A CHEETAH </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor feugiat ipsum quis ullamcorper.</p>
-                        <div id="collapse2" style="display:none">
-                            <p>Sed eleifend lectus id semper accumsan.</p>
-                        </div>
-                        <a href="#collapse2" class="nav-toggle2">READ MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END BANNERS -->
+    </header>
+    <!-- END HEADER -->
 
+    <div class="container">
+        <!-- SEARCH BAR -->
+        <div id="searchWrapper">
+            <input type="text" name="searchBar" id="searchBar" placeholder="Search product...">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <!-- END SEARCH BAR -->
+
+        <!-- SHOW PRODUCTS -->
+        <ul id="productsList">
+            <!-- Dynamically with fetchAPI.js -->
+        </ul>
+        <!-- END SHOW PRODUCTS -->
     </div>
+        
+
+    <!-- BANNERS -->
+    <div class="container">
+        <div class="row row-cols-2">
+            <div class="col" id="banner1">
+                <!--<img src="img/banner2.jpg" style="height: 100%; width: 100%; object-fit: contain;">-->
+                <div class="title">
+                    <h4> FIGHT LIKE A SPIDER </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor feugiat ipsum quis ullamcorper.</p>
+                    <div id="collapse" style="display:none">
+                        <p>Sed eleifend lectus id semper accumsan.</p>
+                    </div>
+                    <a href="#collapse" class="nav-toggle">READ MORE</a>
+                </div>
+            </div>
+            <div class="col" id="banner2">
+                <!--<img src="img/banner2.jpg" style="height: 100%; width: 100%; object-fit: contain;">-->
+                <div class="title">
+                    <h4> RUN LIKE A CHEETAH </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor feugiat ipsum quis ullamcorper.</p>
+                    <div id="collapse2" style="display:none">
+                        <p>Sed eleifend lectus id semper accumsan.</p>
+                    </div>
+                    <a href="#collapse2" class="nav-toggle2">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END BANNERS -->
+    
     
   
     <!-- Optional JavaScript; choose one of the two! -->
