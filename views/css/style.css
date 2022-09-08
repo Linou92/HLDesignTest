@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+/* Position header */
+.my-nav{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    margin-top: 1%;
+}
+
+/* Position and properties of the entries */
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding-top: -5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    margin-left: -70%;
+}
+
+.navbar-nav > li{
+    margin-right:15%;
+}
+
+/* Position and properties of the logo */
+.navbar-light .navbar-brand {
+    color: white;
+    padding-top: .8rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 1000;
+    margin-left: 3%;
+}
+
+/* Properties of the first slide's buttons */
+.carousel-caption button{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    width: 13%;
+    height: 40px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    position: absolute;
+}
+
+/* Position of Buy Me button */
+.carousel-caption #btn1{
+    left: 6.5%;
+    top: -490%;
+}
+
+/* Position of Learn More button */
+.carousel-caption #btn2{
+    left: 22%;
+    top: -490%;
+}
+
+/* Properties when mouse over the buttons (hover) */
+.carousel-caption button:hover{
+    background-color: white;
+    color: rgb(86, 30, 119);
+}
+
+/* Properties of the products' container */
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Properties of the list */
+#productsList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    grid-gap: 40px 20px;
+}
+
+/* Properties of each product */
+.product {
+    list-style-type: none;
+    border: 1px solid rgba(187, 185, 185, 0.712);
+    border-radius: 3px;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    place-items: center;
+    /*grid-template-areas:
+        'name image';
+    /*text-align: left;*/
+	
+}
+
+/* Properties of the product's name */
+.product > h6 {
+    /*grid-area: name;*/
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.product > img {
+    
+    /*grid-area: image;
+    margin: auto;
+    display: block;
+    width: 50%;*/
+}
+
+/* Properties of the search icon */
+.search .fa-search{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+/* Properties of the search bar */
+#searchBar {
+    width: 97.5%;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid #d6d4d4;
+    padding: 5px 10px;
+    font-size: 13px;
+    text-indent: 15px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+/* Image banners */
+
+.container1 {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#banner1{
+    background-image: url(../img/banner1.jpg);
+    height: 500px;
+    background-size: cover;
+    position: relative;
+} 
+
+#banner2{
+    background-image: url(../img/banner2.jpg);
+    height: 500px;
+    background-size: cover;
+    position: relative;
+}
+
+h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+p{
+    color:rgb(134, 131, 131);
+    font-size: 12px;
+}
+
+.nav-toggle, .nav-toggle2{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+#banner1 .title, #banner2 .title{
+    text-align: left;
+    left: 0;
+    margin-left: 5%;
+    width: 50%;
+    bottom: 0;
+    top: 60%;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}

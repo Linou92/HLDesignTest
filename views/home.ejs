@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://use.fontawesome.com/fc184256d5.js"></script>
+    <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Oswald:wght@300&family=Saira+Extra+Condensed:wght@600&;700display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>SPORTSHOES.COM</title>
+  </head>
+
+  <body>
+    
+    <!-- HEADER -->
+    <header>
+        <!-- Navbar -->
+        <nav class="my-nav navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <!-- logo -->
+              <a class="navbar-brand" href="#">SPORTSHOES.COM</a>
+              <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto"></ul>
+              <!-- entries -->    
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="men">MEN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="women">WOMEN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- SLIDESHOW -->
+
+        <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- Inner slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slide1.jpg" class="d-block w-100">
+                <div class="carousel-caption">
+                  <button type="button" class="btn btn-default" id="btn1" onclick="location.href = 'buy';">BUY NOW</button>
+                  <button type="button" class="btn btn-default" id="btn2" onclick="location.href = 'learn';">LEARN MORE</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide3.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide2.jpg" class="d-block w-100">
+              </div>
+            </div>
+        </div>
+        <!-- END SLIDESHOW -->
+
+    </header>
+    <!-- END HEADER -->
+
+    <div class="container">
+        <!-- SEARCH BAR -->
+        <div id="searchWrapper">
+            <input type="text" name="searchBar" id="searchBar" placeholder="Search product...">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <!-- END SEARCH BAR -->
+
+        <!-- SHOW PRODUCTS -->
+        <ul id="productsList">
+            <!-- Dynamically with fetchAPI.js -->
+        </ul>
+        <!-- END SHOW PRODUCTS -->
+    </div>
+        
+
+    <!-- BANNERS -->
+    <div class="container">
+        <div class="row row-cols-2">
+            <div class="col" id="banner1">
+                <!--<img src="img/banner2.jpg" style="height: 100%; width: 100%; object-fit: contain;">-->
+                <div class="title">
+                    <h4> FIGHT LIKE A SPIDER </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor feugiat ipsum quis ullamcorper.</p>
+                    <div id="collapse" style="display:none">
+                        <p>Sed eleifend lectus id semper accumsan.</p>
+                    </div>
+                    <a href="#collapse" class="nav-toggle">READ MORE</a>
+                </div>
+            </div>
+            <div class="col" id="banner2">
+                <!--<img src="img/banner2.jpg" style="height: 100%; width: 100%; object-fit: contain;">-->
+                <div class="title">
+                    <h4> RUN LIKE A CHEETAH </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor feugiat ipsum quis ullamcorper.</p>
+                    <div id="collapse2" style="display:none">
+                        <p>Sed eleifend lectus id semper accumsan.</p>
+                    </div>
+                    <a href="#collapse2" class="nav-toggle2">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END BANNERS -->
+    
+    
+  
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <!-- FETCHING API AND DISPLAY PRODUCTS -->
+
+    <script src="fetchAPI.js"></script>
+
+    <!-- JQUERY CODE FOR READ MORE -->
+    <script>
+      $(document).ready(function () {
+        $('.nav-toggle').click(function () {
+            var collapse_content_selector = $(this).attr('href');
+            var toggle_switch = $(this);
+            $(collapse_content_selector).toggle(function () {
+                if ($(this).css('display') == 'none') {
+                    toggle_switch.html('READ MORE');
+                } else {
+                    toggle_switch.html('READ LESS');
+                }
+            });
+        });
+      });
+
+      $(document).ready(function () {
+        $('.nav-toggle2').click(function () {
+            var collapse_content_selector = $(this).attr('href');
+            var toggle_switch = $(this);
+            $(collapse_content_selector).toggle(function () {
+                if ($(this).css('display') == 'none') {
+                    toggle_switch.html('READ MORE');
+                } else {
+                    toggle_switch.html('READ LESS');
+                }
+            });
+        });
+      });
+    </script>
+      
+  </body>
+</html>
