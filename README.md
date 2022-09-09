@@ -13,7 +13,6 @@ Webshop for shoes that displays the products via an external API.
    - Bootstrap v.5
    - Html & Css
    - npm version 8.19.1
-   - NodeJs version 16.14.0
    - Visual Studio Code version 1.71.0
    - Used API : https://webshop.wm3.se/api/v1/shop/products.json?media_file=true
 
