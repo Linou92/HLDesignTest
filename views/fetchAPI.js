@@ -8,14 +8,11 @@ let shoeProducts = []
 searchBar.addEventListener('keyup', (e) => {
     var searchInput = e.target.value
     searchInput = searchInput.toLowerCase()
-    //console.log(searchInput)
-    //console.log("A = ", shoeProducts)
     const filteredProducts = shoeProducts.filter(product => {
         return(
             product.name.toLowerCase().includes(searchInput)
         )
     })
-    //console.log(filteredProducts)
     displaySearchProducts(filteredProducts)
 })
 
@@ -25,10 +22,7 @@ const loadProducts = async () => {
         const res = await fetch('https://webshop.wm3.se/api/v1/shop/products.json?media_file=true')
         shoeProducts = await res.json()
         shoeProducts = shoeProducts.products
-        //console.log("B = ",shoeProducts)
         displayFirstSixProducts(shoeProducts)
-        /*shoeProducts = shoeProducts.products*/
-        //console.log("C = ",shoeProducts)
     }
     catch (err) {
         console.log(err)
@@ -52,9 +46,9 @@ function displaySearchProducts (data){
         
         const shoeImg = document.createElement("img")
         shoeImg.src = shoeImage
-        shoeImg.style = "height: 100%; width: 100%; object-fit: contain;"
 
-        const name = document.createElement("h6")
+        const name = document.createElement("p")
+        name.id = "shoeName"
         name.innerHTML = shoeName
 
         productsList.appendChild(product)
@@ -66,7 +60,6 @@ function displaySearchProducts (data){
 
 /* Function that only displays the first 6 products of the API call (landing page)*/
 function displayFirstSixProducts(data) {
-    console.log("D = ", data)
     // get the first 6 products
     for(i=0; i<6; i++){
         // get the name and image of each product
@@ -79,12 +72,11 @@ function displayFirstSixProducts(data) {
         
         const shoeImg = document.createElement("img")
         shoeImg.src = shoeImage
-        shoeImg.style = "height: 100%; width: 100%; object-fit: contain;"
 
-        const name = document.createElement("h6")
+        const name = document.createElement("p")
+        name.id = "shoeName"
         name.innerHTML = shoeName
-        //name.style = "height: 100%; width: 100%; object-fit: contain;"
-        
+
         productsList.appendChild(product)
         product.appendChild(shoeImg)
         product.appendChild(name)

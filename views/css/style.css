@@ -71,7 +71,6 @@
 .container {
     padding: 40px;
     margin: 0 auto;
-    max-width: 1000px;
     text-align: center;
 }
 
@@ -80,7 +79,7 @@
     padding-inline-start: 0;
     display: grid;
     grid-template-columns: repeat(3, minmax(280px, 1fr));
-    grid-gap: 40px 20px;
+    grid-gap: 25px 20px;
 }
 
 /* Properties of each product */
@@ -89,30 +88,29 @@
     border: 1px solid rgba(187, 185, 185, 0.712);
     border-radius: 3px;
     padding: 20px 20px;
-    /*display: grid;*/
     grid-template-columns: 3fr 1fr;
     place-items: center;
-    grid-template-areas:
-        'name image';
-    text-align: left;
-    height: 60%;
+    height: 80%;
+    width: 100%;
 }
 
 /* Properties of the product's name */
-.product > h6 {
-    /*grid-area: name;*/
-    font-family: 'Lato', sans-serif;
-    font-weight: bolder;
+#shoeName {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 1rem;
+    color: black;
+    text-align: left;
 }
 
 .product > img {
-    
-    /*grid-area: image;
+    height: 80%; 
+    width: 80%; 
+    object-fit: contain;
+    justify-content: center;
     margin: auto;
-    display: block;
-    width: 50%;*/
+    padding: 0;
 }
 
 /* Properties of the search icon */
@@ -146,13 +144,6 @@
 }
 
 /* Image banners */
-
-.container1 {
-    padding: 40px;
-    margin: 0 auto;
-    max-width: 1000px;
-    text-align: center;
-}
 
 #banner1{
     background-image: url(../img/banner1.jpg);
@@ -194,4 +185,143 @@ p{
     position: absolute;
     font-family: 'Lato', sans-serif;
     color: #fff;
+}
+
+/******** RESPONSIVITY ********/
+
+/* Responsive for mobile */
+
+@media only screen and (max-width: 600px){
+    /* Position header */
+    .my-nav{
+        display: flex;
+    }
+
+    /* Position and properties of the entries */
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 8px;
+        display: block;
+    }
+
+    /* Position and properties of the logo */
+    .navbar-light .navbar-brand {
+        font-size: 15px;
+    }
+
+    /* Properties of the first slide's buttons */
+    .carousel-caption button{
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        font-size: 7px;
+        font-weight: bold;
+        width: 15%;
+        height: 20px;
+        font-family: 'Saira Extra Condensed', sans-serif;
+        position: absolute;
+        margin-top: 170px;
+        
+    }
+
+    /* Position of Buy Me button */
+    .carousel-caption #btn1{
+        left: 6.5%;
+        top: -490%;
+    }
+
+    /* Position of Learn More button */
+    .carousel-caption #btn2{
+        left: 22%;
+        top: -490%;
+        width: 16%;
+        justify-content: center;
+    }
+
+    /* Properties of the list */
+    #productsList {
+        padding-inline-start: 0;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(280px, 1fr));
+        grid-gap: 25px 20px;
+    }
+
+    /* banners */
+    #banner1 {
+        width: 100%;
+       
+    }
+
+    #banner2 {
+        width: 100%;
+    }
+    
+}
+
+/* Responsive for tablets */
+
+@media only screen and (max-width: 990px){
+    /* Position header */
+    .my-nav{
+        display: flex;
+    }
+
+    /* Position and properties of the entries */
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 8px;
+        display: block;
+    }
+
+    /* Position and properties of the logo */
+    .navbar-light .navbar-brand {
+        font-size: 15px;
+    }
+
+    /* Properties of the first slide's buttons */
+    .carousel-caption button{
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        font-size: 7px;
+        font-weight: bold;
+        width: 15%;
+        height: 20px;
+        font-family: 'Saira Extra Condensed', sans-serif;
+        position: absolute;
+        margin-top: 170px;
+        
+    }
+
+    /* Position of Buy Me button */
+    .carousel-caption #btn1{
+        left: 6.5%;
+        top: -490%;
+    }
+
+    /* Position of Learn More button */
+    .carousel-caption #btn2{
+        left: 22%;
+        top: -490%;
+        width: 16%;
+        justify-content: center;
+    }
+
+    /* Properties of the list */
+    #productsList {
+        padding-inline-start: 0;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(280px, 1fr));
+        grid-gap: 25px 20px;
+    }
+
+    /* banners */
+    #banner1 {
+        width: 100%;
+    }
+
+    #banner2 {
+        width: 100%;
+    }
+
 }

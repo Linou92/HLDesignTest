@@ -3,9 +3,6 @@ const https = require('https')
 var fs = require('fs')
 var express = require('express')
 var bodyParser = require('body-parser')
-//const fetch = require('node-fetch')
-
-//var cors = require('cors')
 
 var app = express()
 
@@ -20,33 +17,6 @@ app.use(express.static('public'))
 // PARSE APPLICATION
 app.use(bodyParser.json({limit: '1000tb', extended: true}))
 app.use(bodyParser.urlencoded({limit: '1000tb', extended: true}))
-
-// ALLOW CROSS ORIGIN
-//CORS middleware
-/*var allowCrossDomain = function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', 'https://webshop.wm3.se/api/v1/shop/products.json?media_file=true');
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-
-  next();
-}
-
-app.use(allowCrossDomain)
-
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://webshop.wm3.se/api/v1/shop/products.json?media_file=true");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
-
-app.use(cors({
-  origin: 'https://webshop.wm3.se/api/v1/shop/products.json?media_file=true'
-}));*/
-
-
 
 // Homepage
 app.get('/', (req, res) => {
